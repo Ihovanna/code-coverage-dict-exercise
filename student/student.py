@@ -1,6 +1,5 @@
 def create_student(name, level, courses):
     if not courses:
-<<<<<<< HEAD
         courses = []
 
     return {
@@ -8,15 +7,6 @@ def create_student(name, level, courses):
         "level": level,
         "courses": courses,
     }
-=======
-        return None
-    else:
-        return {
-            "name": name,
-            "level": level,
-            "courses": courses,
-        }
->>>>>>> cd79f204c78679398c90705191dc05b358812d75
 
 def add_class(student, course_name):
     student["courses"].append(course_name)
@@ -32,5 +22,5 @@ def summary(student):
 
 def get_student_with_more_classes(student_a, student_b):
     if get_num_classes(student_a) > get_num_classes(student_b):
-        return student_b
+        return student_a
     return student_b

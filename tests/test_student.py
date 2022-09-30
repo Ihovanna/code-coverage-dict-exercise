@@ -51,8 +51,8 @@ def test_get_student_with_more_classes():
 
     # TODO: write assertions
 def test_for_students_with_more_classes():
-    student_a = ("George Byron", "senior", ["advanced poetry"])
-    student_b = (
+    student_a = create_student("George Byron", "senior", ["advanced poetry"])
+    student_b = create_student(
         "Ada Lovelace",
         "sophomore",
         ["mathematics", "foundations of computing"])

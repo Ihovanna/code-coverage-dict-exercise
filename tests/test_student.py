@@ -51,11 +51,14 @@ def test_get_student_with_more_classes():
 
     # TODO: write assertions
 def test_for_students_with_more_classes():
-    student_a = 8
-    student_b = 6
+    student_a = ("George Byron", "senior", ["advanced poetry"])
+    student_b = (
+        "Ada Lovelace",
+        "sophomore",
+        ["mathematics", "foundations of computing"])
 
     ada = get_student_with_more_classes(student_a, student_b)
-    assert ada == student_a
+    assert ada == student_b
 
 
 

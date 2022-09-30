@@ -13,6 +13,7 @@ def test_init():
     assert ada["name"] == name
     assert ada["level"] == level
     assert ada["courses"] == courses
+    assert not ada["courses"] == None
 
 def test_add_class():
     new_class = 'Intro to Feminism'

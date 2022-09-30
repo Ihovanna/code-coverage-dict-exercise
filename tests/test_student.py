@@ -57,8 +57,17 @@ def test_for_students_with_more_classes():
         "sophomore",
         ["mathematics", "foundations of computing"])
 
+    student_bb = create_student("George Byron", "senior", ["advanced poetry"])
+    student_aa = create_student(
+        "Ada Lovelace",
+        "sophomore",
+        ["mathematics", "foundations of computing"])
+
     ada = get_student_with_more_classes(student_a, student_b)
     assert ada == student_b
+
+    ada = get_student_with_more_classes(student_aa, student_bb)
+    assert ada == student_a
 
 
 

@@ -13,11 +13,11 @@ def test_init():
     assert ada["name"] == name
     assert ada["level"] == level
     assert ada["courses"] == courses
-    
+
 def empty_list():
     name = "Ada Lovelace"
     level = "sophomore"
-    courses = []
+    courses = None
     ada = create_student(name, level, courses )
     assert ada == None
 

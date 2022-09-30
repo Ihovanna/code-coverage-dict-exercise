@@ -1,12 +1,12 @@
 def create_student(name, level, courses):
     if not courses:
         return None
-
-    return {
-        "name": name,
-        "level": level,
-        "courses": courses,
-    }
+    else:
+        return {
+            "name": name,
+            "level": level,
+            "courses": courses,
+        }
 
 def add_class(student, course_name):
     student["courses"].append(course_name)
